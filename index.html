@@ -325,7 +325,7 @@
             position: relative;
             padding: 120px 0 100px;
             background: linear-gradient(180deg, rgba(10, 14, 20, 0.7) 0%, var(--bg-dark) 100%),
-                        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+                        url('https://images.unsplash.com/photo-1664650082775-70b058b60c00?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
             border-bottom: 1px solid var(--border-color);
             overflow: hidden;
         }
@@ -584,13 +584,28 @@
         .battery-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            padding: 12px;
+            background: #e9edf1;
             transition: var(--transition);
         }
 
         .battery-card:hover .battery-img img {
-            transform: scale(1.08);
+            transform: scale(1.03);
         }
+
+        .photo-credits {
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .photo-credits summary { cursor: pointer; color: var(--accent-yellow); }
+        .photo-credits p { margin-top: 12px; }
+        .photo-credits a { color: var(--accent-blue); text-decoration: underline; }
 
         .battery-tag {
             position: absolute;
@@ -1302,7 +1317,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80" alt="Automotive Battery Testing and Maintenance Work">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Bosch_battery_in_Mercedes-250S.jpg/960px-Bosch_battery_in_Mercedes-250S.jpg" alt="Bosch automotive battery installed in a vehicle, reference installation" loading="lazy" decoding="async" width="960" height="598">
                     <div class="about-badge-overlay">
                         <i class="fa-solid fa-shield-halved"></i>
                         <div>
@@ -1351,14 +1366,14 @@
             <div class="section-title">
                 <span class="badge"><i class="fa-solid fa-car-battery"></i> Product Range</span>
                 <h2>Automotive Battery Categories</h2>
-                <p>Explore battery solutions categorized by vehicle requirement. Contact us directly via WhatsApp to discuss current availability and specific options.</p>
+                <p>Explore battery solutions categorized by vehicle requirement. Contact us directly via WhatsApp to discuss current availability and specific options.<br><small>Images show reference battery types. Brands and models pictured are not a confirmation of current stock.</small></p>
             </div>
 
             <div class="grid-4">
                 <!-- Car Batteries -->
                 <div class="battery-card">
                     <div class="battery-img">
-                        <img src="https://images.unsplash.com/photo-1599256872237-5dcc3f54263a?auto=format&fit=crop&w=600&q=80" alt="Car Battery Unit for Passenger Vehicles">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Photo-CarBattery.jpg" alt="Standalone 12-volt lead-acid car battery with top terminals" loading="lazy" decoding="async" width="1585" height="1515">
                         <span class="battery-tag">Four-Wheelers</span>
                     </div>
                     <div class="battery-body">
@@ -1375,7 +1390,7 @@
                 <!-- Motorcycle Batteries -->
                 <div class="battery-card">
                     <div class="battery-img">
-                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Motorcycle Battery Setup">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lithium_iron_phosphate_battery%2C_12_V%2C_48_Wh%2C_240_A.jpg/960px-Lithium_iron_phosphate_battery%2C_12_V%2C_48_Wh%2C_240_A.jpg" alt="Compact 12-volt motorcycle battery with a charge indicator, reference model" loading="lazy" decoding="async" width="960" height="1052">
                         <span class="battery-tag">Two-Wheelers</span>
                     </div>
                     <div class="battery-body">
@@ -1392,7 +1407,7 @@
                 <!-- Automotive Batteries -->
                 <div class="battery-card">
                     <div class="battery-img">
-                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Automotive Battery Engine Terminal Setup">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Super_Start_Platinum_Car_Battery.jpg/960px-Super_Start_Platinum_Car_Battery.jpg" alt="Super Start Platinum automotive battery on display, reference model" loading="lazy" decoding="async" width="960" height="707">
                         <span class="battery-tag">General Auto</span>
                     </div>
                     <div class="battery-body">
@@ -1409,7 +1424,7 @@
                 <!-- Replacement Batteries -->
                 <div class="battery-card">
                     <div class="battery-img">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Battery Replacement in Vehicle Engine Bay">
+                        <img src="https://images.unsplash.com/photo-1661615342785-9a02a05ec90b?auto=format&amp;fit=max&amp;w=960&amp;q=80" alt="Close-up of an automotive battery, reference for replacement inquiries" loading="lazy" decoding="async">
                         <span class="battery-tag">Replacement</span>
                     </div>
                     <div class="battery-body">
@@ -1637,36 +1652,36 @@
             <div class="section-title">
                 <span class="badge"><i class="fa-solid fa-images"></i> Visual Showcase</span>
                 <h2>Battery &amp; Service Gallery</h2>
-                <p>Explore real visuals of automotive battery products, checking equipment, and installation setups.</p>
+                <p>Explore reference photos of automotive batteries, terminals, internal components, and charging setups. These are not photographs of work performed at our store.</p>
             </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Car Battery Terminal Connection" loading="lazy">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Battery_Terminal_Corrision.jpg/960px-Battery_Terminal_Corrision.jpg" alt="Corrosion around an automotive battery terminal requiring inspection" loading="lazy" decoding="async" width="960" height="720">
                     <div class="gallery-overlay">
                         <span>Terminal Care</span>
-                        <h4>Clean Battery Connections</h4>
+                        <h4>Battery Terminal Inspection</h4>
                     </div>
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1599256872237-5dcc3f54263a?auto=format&fit=crop&w=600&q=80" alt="Automotive Battery Unit" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Car_battery_cross-section.jpeg" alt="Cutaway of a 12-volt automotive battery showing its internal plates" loading="lazy" decoding="async" width="720" height="960" style="object-fit: contain;">
                     <div class="gallery-overlay">
-                        <span>Automotive Power</span>
-                        <h4>Car Battery Replacement</h4>
+                        <span>Battery Construction</span>
+                        <h4>Inside a Car Battery</h4>
                     </div>
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=600&q=80" alt="Battery Testing Equipment and Technician Work" loading="lazy">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Auxiliary_Battery_%26_CTEK_charger.jpg/960px-Auxiliary_Battery_%26_CTEK_charger.jpg" alt="Auxiliary AGM battery connected to a CTEK charging system" loading="lazy" decoding="async" width="960" height="640">
                     <div class="gallery-overlay">
-                        <span>Diagnostics</span>
-                        <h4>Battery Condition Testing</h4>
+                        <span>Charging Systems</span>
+                        <h4>Auxiliary Battery Setup</h4>
                     </div>
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Vehicle Engine Bay with Battery Setup" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1764122623556-90a7d480df53?auto=format&amp;fit=crop&amp;w=960&amp;q=80" alt="Vehicle battery and connected cables inside an engine bay" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span>Installation</span>
                         <h4>Engine Bay Fitting</h4>
@@ -1674,15 +1689,15 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Motorcycle Battery Setup" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/CrocodileClamponBattery.jpg" alt="Jumper cable clamp attached to an automotive battery's positive terminal" loading="lazy" decoding="async" width="640" height="439">
                     <div class="gallery-overlay">
-                        <span>Two-Wheelers</span>
-                        <h4>Motorcycle Battery Fitting</h4>
+                        <span>Battery Connections</span>
+                        <h4>Battery Terminal Clamp</h4>
                     </div>
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fe?auto=format&fit=crop&w=600&q=80" alt="Battery Charging and Electrical Cables" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1676337167752-2062c6ca7366?auto=format&amp;fit=max&amp;w=960&amp;q=80" alt="Battery connected to charging clamps and cables" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span>Power Charging</span>
                         <h4>Battery Charging Cables</h4>
@@ -1793,6 +1808,13 @@
                 </div>
             </div>
 
+            <details class="photo-credits">
+                <summary>Battery photo credits</summary>
+                <p><a href="https://en.wikipedia.org/wiki/File:Photo-CarBattery.jpg" target="_blank" rel="noopener">Car battery</a> by Shaddack and <a href="https://en.wikipedia.org/wiki/File:CrocodileClamponBattery.jpg" target="_blank" rel="noopener">battery terminal clamp</a> by Wtshymanski are public domain. <a href="https://en.wikipedia.org/wiki/File:Battery_Terminal_Corrision.jpg" target="_blank" rel="noopener">Battery terminal corrosion</a> by MarkBuckawicki is CC0.</p>
+                <p><a href="https://en.wikipedia.org/wiki/File:Bosch_battery_in_Mercedes-250S.jpg" target="_blank" rel="noopener">Installed Bosch battery</a> by Wikisympathisant; <a href="https://en.wikipedia.org/wiki/File:Lithium_iron_phosphate_battery,_12_V,_48_Wh,_240_A.jpg" target="_blank" rel="noopener">motorcycle battery</a> by Cjp24; <a href="https://en.wikipedia.org/wiki/File:Super_Start_Platinum_Car_Battery.jpg" target="_blank" rel="noopener">Super Start battery</a> by TaurusEmerald: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="https://en.wikipedia.org/wiki/File:Car_battery_cross-section.jpeg" target="_blank" rel="noopener">Battery cross-section</a> by Ben Cossalter: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" target="_blank" rel="noopener">CC BY-SA 3.0</a>. <a href="https://en.wikipedia.org/wiki/File:Auxiliary_Battery_%26_CTEK_charger.jpg" target="_blank" rel="noopener">Auxiliary battery and charger</a> by Stephan Ridgway: <a href="https://creativecommons.org/licenses/by/2.0/deed.en" target="_blank" rel="noopener">CC BY 2.0</a>.</p>
+                <p>Unsplash reference photos by <a href="https://unsplash.com/photos/a-close-up-of-a-car-battery-KgUN2n4Zems" target="_blank" rel="noopener">Klaus Birner</a>, <a href="https://unsplash.com/photos/a-close-up-of-a-car-battery-EmBdFdsmxXI" target="_blank" rel="noopener">Jorge Simmons-Valenzuela</a>, <a href="https://unsplash.com/photos/close-up-of-a-car-engine-and-battery-YcfXusR1DQ8" target="_blank" rel="noopener">William Liu</a>, and <a href="https://unsplash.com/photos/a-red-and-green-battery-with-a-pair-of-pliers-attached-to-it-9-eTixAqB_M" target="_blank" rel="noopener">Newpowa</a>, under the <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License</a>.</p>
+                <p>Photos are resized and may be cropped by the layout. Adapted Creative Commons photos retain their respective licenses. Reference imagery does not imply brand affiliation or availability.</p>
+            </details>
             <div class="footer-bottom">
                 <p>&copy; 2026 Al Shahid Battery. All rights reserved.</p>
                 <p style="font-size: 0.8rem; color: var(--text-dim);">Automotive Battery Services • Orangi Town, Karachi</p>
